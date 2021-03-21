@@ -1,4 +1,4 @@
-import base64
+import base64, os
 message = """
 
 # your webhook URL
@@ -74,3 +74,8 @@ message_bytes = message.encode('ascii')
 base64_bytes = base64.b64encode(message_bytes)
 base64_message = base64_bytes.decode('ascii')
 print(base64_message)
+
+if os.path.exists('./stage.txt'):
+    os.remove('./stage.txt')
+with open('stage.txt', 'w+') as f:
+    f.write(base64_message)
